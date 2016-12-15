@@ -4,6 +4,7 @@ FROM registry.ng.bluemix.net/ibmnode
 
 	ENV NODE_ENV production
 
-	EXPOSE 3000
+	ENV WEB_PORT 80
+        EXPOSE  80
 	
 	CMD ["node", "/node-hello/app.js"]
